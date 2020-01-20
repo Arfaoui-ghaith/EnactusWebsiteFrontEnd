@@ -1,0 +1,52 @@
+<div class="heading">
+    <h1>About Us</h1>
+    <span>Get More Info About Our Club</span> 
+  </div>
+  <div class="cd-half-width second-slide">   
+    <div class="container" style="width: 80%;">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="content second-content">
+            <div class="row">
+              <div class="col-md-7 left-image">
+                <img height="450px" width="180px" src="../../assets/img/left-about-image.jpg">
+              </div>
+              <div class="col-md-5">
+                <div class="right-about-text">
+                  <h4>Who we are?</h4>
+                  <p>We, as students, are committed to using the power of entrepreneurial action to improve the quality of life and standard of living for people in need. Guided by academic advisors and business experts, we create and implement community empowerment projects around the globe.</p>
+                 
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-7">
+                <div class="left-about-text">
+                  <h4>What we do?</h4>
+                  <p>We are trying to achieve the sustainable development goals of UNICEF.</p>
+                 
+                </div>
+              </div>
+              <div class="col-md-5 right-image">
+                <img src="../../assets/img/right-about-image.jpg">
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div>
+                <div class="left-about-text" style="text-align: center;">
+                  <h4>Our Team</h4>
+                  
+                  <div  *ngFor="let member of membersArray">
+                    <app-team  [membersArr]="member"></app-team>
+                  </div>
+                  
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>                
+    </div>
+  </div>

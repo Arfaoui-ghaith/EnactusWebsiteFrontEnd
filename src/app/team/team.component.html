@@ -1,0 +1,35 @@
+<section class="container containerr">
+    <div class="card" >
+        <div class="col-md-4 col-sm-6 col-xs-12 wcard" style="padding-left: 0px;">
+            <article class="material-card enactus">
+                <h2>
+                    <span>{{ membersArr.name }}</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star"></i>
+                       {{ membersArr.role }} 
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" style="border-top-left-radius: 20px; border-top-right-radius: 20px;" [src]="membersArr.image">
+                    </div>
+                    <div class="mc-description" style="color:#ECEFF1">
+                       <p> {{ membersArr.description }} </p>
+                    </div>
+                </div>
+                <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="mc-footer">
+                    <h4 style="color: #ECEFF1">
+                        Social
+                    </h4>
+                    <a class="fa fa-fw fa-facebook" [href]="membersArr.facebook"></a>
+                    <a class="fa fa-fw fa-instagram" [href]="membersArr.facebook"></a>
+                    <a class="fa fa-fw fa-google-plus" [href]="membersArr.gmail"></a>
+                </div>
+            </article>
+        </div>
+        
+    </div>
+</section>
