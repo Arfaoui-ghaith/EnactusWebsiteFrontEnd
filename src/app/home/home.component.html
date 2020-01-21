@@ -11,6 +11,28 @@
             <h4>Let’s Talk More About Enactus Iset Charguia</h4>
             <p>Founded in 2017, enactus iset charguia is a chapter of a global organization that connects student, academic and business leaders through entrepreneurial based-projects.</p>
           </div>
+
+          <div class="content first-content" *ngIf="eventsArray[0] != null">
+            <h4>News & Events</h4>
+            <hr>
+
+            <div class="blog-card" *ngFor="let event of eventsArray">
+              <div class="meta">
+                <div class="photo" [ngStyle]="{ 'background-image': 'url(' + event.image + ')'}"></div>
+  
+              </div>
+              <div class="description">
+                <h1 style="color:aliceblue">{{event.title}}</h1>
+                
+                <p style="color:aliceblue"> {{event.description}}</p>
+                <p class="read-more">
+                  <a class="btn" style="background-color: #fff; color:#ffbb05" [href]="event.lien_formulaire" *ngIf="event.lien_formulaire != null">Im going!</a>
+                </p>
+              </div>
+            </div>
+            
+          
+          </div>
         </div>
       </div>                  
     </div>

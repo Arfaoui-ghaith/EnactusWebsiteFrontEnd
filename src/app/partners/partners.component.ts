@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PartnersService } from '../services/partners.service';
 
 @Component({
   selector: 'app-partners',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PartnersComponent implements OnInit {
 
-  constructor() { }
+  PartnersArray:any
+  constructor(private partnersService:PartnersService) { }
 
   ngOnInit() {
+    this.getPartnersData();
+  }
+
+  getPartnersData(){
+      this.partnersService.getPartners().subscribe(res=>{
+         this.PartnersArray=res;
+      })
   }
 
 }

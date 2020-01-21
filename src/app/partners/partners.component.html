@@ -8,18 +8,10 @@
         <div class="col-md-12">
           <div class="content fourth-content">
             <div class="row">
-              <div class="col-md-3 project-item">
-                <a href="../../assets/img/item-01.jpg" data-lightbox="image-1"><img src="../../assets/img/item-01.jpg"></a>
+              <div class="col-md-3 project-item" *ngFor="let partner of PartnersArray">
+                <a [href]="partner.image" data-lightbox="image-1"><img [src]="partner.image" [alt]="partner.name"></a>
               </div>
-              <div class="col-md-3 project-item">
-                <a href="../../assets/img/item-02.jpg" data-lightbox="image-1"><img src="../../assets/img/item-02.jpg"></a>
-              </div>
-              <div class="col-md-3 project-item">
-                <a href="../../assets/img/item-03.png" data-lightbox="image-1"><img src="../../assets/img/item-03.png"></a>
-              </div>
-              <div class="col-md-3 project-item">
-                <a href="../../assets/img/item-04.jpg" data-lightbox="image-1"><img src="../../assets/img/item-04.jpg"></a>
-              </div>
+           
           </div>
         </div>
       </div>                  
