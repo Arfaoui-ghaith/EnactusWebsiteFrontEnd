@@ -9,7 +9,7 @@
           <div class="content second-content">
             <div class="row">
               <div class="col-md-7 left-image">
-                <img height="450px" width="180px" src="../../assets/img/left-about-image.jpg">
+                <img height="450px" width="180px" src="../../assets/img/left-about-image.jpg" class="team">
               </div>
               <div class="col-md-5">
                 <div class="right-about-text">
@@ -37,9 +37,13 @@
                 <div class="left-about-text" style="text-align: center;">
                   <h4>Our Team</h4>
                   
-                  <div  *ngFor="let member of membersArray">
-                    <app-team  [membersArr]="member"></app-team>
-                  </div>
+                   
+                    <app-team *ngFor="let member of membersArray; let i = index"  [member]="membersArray[i]"></app-team>
+                  
+
+                <!-- <app-team  [member]="membersArray[0]"></app-team>
+                    <app-team  [member]="membersArray[1]"></app-team>
+                    <app-team  [member]="membersArray[2]"></app-team>  -->
                   
                  
                 </div>

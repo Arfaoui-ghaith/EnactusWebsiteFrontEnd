@@ -1,5 +1,7 @@
 import { Component, OnInit , Input} from '@angular/core';
 
+
+
 @Component({
   selector: 'app-team',
   templateUrl: './team.component.html',
@@ -7,11 +9,12 @@ import { Component, OnInit , Input} from '@angular/core';
 })
 export class TeamComponent implements OnInit {
 
-  @Input() membersArr:any;
+  @Input() member:any;
 
   constructor() { }
 
   ngOnInit() {
+    console.log(typeof this.member.name);
   }
 
 }
