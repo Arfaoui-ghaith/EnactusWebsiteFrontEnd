@@ -8,7 +8,7 @@ export class MembersService {
    members:any;
   constructor(private httpclient:HttpClient) { }
 
-  getMembers(){
-     return this.httpclient.get('http://localhost:8000/api/members');
+   getMembers(){
+     return  this.httpclient.get('http://localhost:8000/api/members');
   }
 }

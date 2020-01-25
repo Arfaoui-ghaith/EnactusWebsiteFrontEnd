@@ -1,6 +1,6 @@
 import { Component} from '@angular/core';
 import { MembersService } from '../services/members.service';
-import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
+
 
 
 @Component({
@@ -20,8 +20,8 @@ export class AboutComponent {
     this.getMembersData();
   }
 
-  getMembersData(){
-      this.membersService.getMembers().subscribe(res=>{
+   getMembersData(){
+      ( this.membersService.getMembers()).subscribe(res=>{
          this.membersArray=res;
       })
   }
