@@ -1,3 +1,5 @@
+
+
 * {
     box-sizing: border-box;
 }
@@ -136,7 +138,7 @@
 .blog-card p:first-of-type:before {
     content: "";
     position: absolute;
-    height: 5px;
+    height: 0px;
     background: #fff;
     width: 35px;
     top: -0.75rem;
