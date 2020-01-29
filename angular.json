@@ -25,18 +25,18 @@
             ],
             "styles": [
               "src/styles.css",
-              "./scripts/bootstrap/dist/css/bootstrap.min.css",
-              "./scripts/bootstrap/dist/css/bootstrap-theme.css",
-              "./scripts/bootstrap/dist/css/bootstrap-theme.min.css",
-              "./scripts/bootstrap/dist/css/fontAwesome.css"
+              "./src/assets/scripts/bootstrap/dist/css/bootstrap.min.css",
+              "./src/assets/scripts/bootstrap/dist/css/bootstrap-theme.css",
+              "./src/assets/scripts/bootstrap/dist/css/bootstrap-theme.min.css",
+              "./src/assets/scripts/bootstrap/dist/css/fontAwesome.css"
 
               
             ],
             "scripts": [    
-              "./scripts/jquery/dist/jquery.min.js", 
-              "./scripts/jquery/dist/jquery-1.11.2.min.js",
-              "./scripts/jquery/dist/main.js",
-              "./scripts/bootstrap/dist/js/bootstrap.min.js"
+              "./src/assets/scripts/jquery/dist/jquery.min.js", 
+              "./src/assets/scripts/jquery/dist/jquery-1.11.2.min.js",
+              "./src/assets/scripts/jquery/dist/main.js",
+              "./src/assets/scripts/bootstrap/dist/js/bootstrap.min.js"
             ]
           },
           "configurations": {
