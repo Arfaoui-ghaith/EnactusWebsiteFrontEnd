@@ -607,11 +607,11 @@ $(function() {
             var card = $(this).parent('.material-card');
             var icon = $(this).children('i');
             icon.addClass('fa-spin-fast');
-            console.log('step 1 OK');
+            
 
             if (card.hasClass('mc-active')) {
                 card.removeClass('mc-active');
-                console.log('step 2-1 OK');
+                
 
                 window.setTimeout(function() {
                     icon
@@ -619,11 +619,11 @@ $(function() {
                         .removeClass('fa-spin-fast')
                         .addClass('fa-bars');
 
-                }, 800); console.log('step 2-2 OK');
+                }, 800); 
             } else {
-                card.addClass('mc-active'); console.log('step 3-1 OK');
+                card.addClass('mc-active'); 
 
-                window.setTimeout(function() { console.log('step 3-2 OK');
+                window.setTimeout(function() { 
                     icon
                         .removeClass('fa-bars')
                         .removeClass('fa-spin-fast')
