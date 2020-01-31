@@ -9,7 +9,7 @@ import { Component, OnInit , Input} from '@angular/core';
 })
 export class TeamComponent implements OnInit {
 
-  @Input() member:Object;
+  @Input() member:any;
 
   constructor() { }
 
