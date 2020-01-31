@@ -9,6 +9,6 @@ export class ProjectsService {
   constructor(private httpclient:HttpClient) { }
 
   getProjects(){
-     return this.httpclient.get('http://localhost:8000/api/projects');
+     return this.httpclient.get('http://enactusisetch.rf.gd/api/projects');
   }
 }

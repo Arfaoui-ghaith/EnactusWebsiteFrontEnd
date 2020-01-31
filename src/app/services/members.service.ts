@@ -9,6 +9,6 @@ export class MembersService {
   constructor(private httpclient:HttpClient) { }
 
    getMembers(){
-     return  this.httpclient.get('http://localhost:8000/api/members');
+     return  this.httpclient.get('http://enactusisetch.rf.gd/api/members');
   }
 }
