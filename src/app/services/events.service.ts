@@ -9,6 +9,6 @@ export class EventsService {
   constructor(private httpclient:HttpClient) { }
 
   getevents(){
-     return this.httpclient.get('http://enactusisetch.rf.gd/api/events');
+     return this.httpclient.get('https://enactusisetch.herokuapp.com/api/events');
   }
 }
