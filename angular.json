@@ -29,11 +29,9 @@
               "./src/assets/scripts/bootstrap/dist/css/bootstrap-theme.css",
               "./src/assets/scripts/bootstrap/dist/css/bootstrap-theme.min.css",
               "./src/assets/scripts/bootstrap/dist/css/fontAwesome.css"
-
-              
             ],
-            "scripts": [    
-              "./src/assets/scripts/jquery/dist/jquery.min.js", 
+            "scripts": [
+              "./src/assets/scripts/jquery/dist/jquery.min.js",
               "./src/assets/scripts/jquery/dist/jquery-1.11.2.min.js",
               "./src/assets/scripts/jquery/dist/main.js",
               "./src/assets/scripts/bootstrap/dist/js/bootstrap.min.js"
@@ -131,6 +129,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "EnactusIsetch"
+    }
+  },
+  "defaultProject": "EnactusIsetch",
+  "cli": {
+    "analytics": false
+  }
 }

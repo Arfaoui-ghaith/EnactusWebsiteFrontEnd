@@ -1,5 +1,73 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700,400');
 @media only screen and (max-width: 450px) {
     .team {
         height:200px
     }
 }
+
+
+.container-cards{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+	align-items: center
+	
+}
+.container-card{
+	position: relative;
+	margin: 20px 10px;
+}
+.card{
+	position: relative;
+	width: 200px;
+	height: 210px;
+	border-radius: 10px;
+	box-shadow: 0 -5px 7px rgba(0,0,0,.1);
+	overflow: hidden;
+	background-color:#ffbb05;
+}
+.image-box{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #ffbb05;
+	z-index: 2;
+	transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out
+}
+.image-box img{
+	transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out
+}
+
+
+/* DETAILS */
+.card-details{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	bottom: 15px;
+}
+.card-details h1{
+	font-size: 20px;
+	font-weight: 700;
+	color: #fff;
+}
+.card-details h1 span{
+	font-size: 14px;
+	font-weight: 400;
+	color: #fff;
+}
+/* HOVER ACTIONS */
+.card:hover .image-box img{
+	opacity: 0.5;
+}
+.card:hover .image-box{
+	top: -75px;
+}
+

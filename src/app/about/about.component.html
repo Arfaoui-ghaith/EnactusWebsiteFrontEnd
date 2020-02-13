@@ -48,6 +48,28 @@
                 </div>
               </div>
             </div>
+             <hr>
+                  <h4>Our Members</h4>
+
+                  <div class="container-cards">
+                
+                    <div class="container-card" *ngFor="let member of membersArray">
+                      <div class="card" *ngIf="verif(member.role)">
+                        <div class="image-box">
+                          <img  [src]="member.image">
+                        </div>
+                       
+                        <div class="card-details">
+                          <h1>{{ member.name }}<br><span>{{ member.description }}</span></h1>
+                        </div>
+                      </div>
+                    </div>
+                
+                  </div>
+
+            
+
+
           </div>
         </div>
       </div>                

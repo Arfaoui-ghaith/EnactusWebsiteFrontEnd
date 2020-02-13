@@ -9,6 +9,6 @@ export class PartnersService {
   constructor(private httpclient:HttpClient) { }
 
   getPartners(){
-     return this.httpclient.get('http://enactusisetch.rf.gd/api/partners');
+     return this.httpclient.get('http://admin.enactusisetch.tn/api/partners');
   }
 }

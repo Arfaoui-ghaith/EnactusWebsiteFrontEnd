@@ -25,4 +25,8 @@ export class AboutComponent {
          this.membersArray=res;
       })
   }
+
+  verif(ch:string){
+    return ch == "member";
+  }
 }
